@@ -42,7 +42,6 @@ EOL'
 echo "/etc/dhcp/dhcpd.conf"
 cat /etc/dhcp/dhcpd.conf
 printf "\n"
-sudo service isc-dhcp-server start
 fi
 
 if [ $v6_choice == 'yes' ] || [ $v6_choice == 'y' ]
@@ -70,7 +69,6 @@ EOL'
 echo "/etc/dhcp/dhcpd6.conf"
 cat /etc/dhcp/dhcpd6.conf
 printf "\n"
-sudo service isc-dhcp-server6 start
 fi
 
 fi

@@ -8,6 +8,10 @@ ip route list
 sudo ip -6 route add default via 2001::1 dev eth0
 ip -6 route list
 
+# pi os
+sudo raspi-config > Interface Options > enable ssh and vnc
+lxappearance    <!-- theme -->
+
 # using bat
 --show-all          <!-- shows all none printable characters -->
 --theme Nord -p     <!-- -p for plain -->
@@ -104,3 +108,8 @@ tmux attach         <!-- if only tmux, it will create a new session -->
 ~/.tmux.conf        <!-- tmux config file -->
  set -g prefix C-s  <!-- make Ctrl-s the leader -->
 ^b :source ~./tmux.conf
+
+# isc-dhcp
+cat /var/lib/dhcp/dhcpd.leases 
+cat /var/lib/dhcp/dhcpd6.leases
+tail -f /var/log/syslog | grep dhcp

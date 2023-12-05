@@ -8,7 +8,7 @@ sudo usermod -aG docker melbayat
 sudo docker pull portainer/portainer-ce:linux-arm
 
 # run portainer container
-sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:linux-arm
+sudo docker run -d -p 9000:9000 --name=portainer --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:linux-arm
 
 # docker cheat sheet
 run -d                              <!-- for deattached , won't hold up the terminal -->

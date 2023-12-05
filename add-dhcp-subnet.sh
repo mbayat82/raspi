@@ -1,3 +1,6 @@
+#!/bin/bash
+
+# check if isc-dhcp-server exists
 dpkg -s isc-dhcp-server &> /dev/null
 if [ $? -eq 0 ]; then
 
