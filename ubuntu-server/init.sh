@@ -2,7 +2,7 @@
 sudo echo "caching sudo password"
 sudo apt update
 sudo apt upgrade
-sudo apt -y install net-tools nmap network-manager speedtest-cli
+sudo apt -y install net-tools nmap network-manager speedtest-cli dnsutils
 sudo apt -y install telnet telnetd ser2net
 sudo apt -y install links2 neofetch btop gdu bat exa ripgrep fzf tmux
 sudo apt -y install python3 python3-pip

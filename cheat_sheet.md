@@ -113,3 +113,15 @@ tmux attach         <!-- if only tmux, it will create a new session -->
 cat /var/lib/dhcp/dhcpd.leases 
 cat /var/lib/dhcp/dhcpd6.leases
 tail -f /var/log/syslog | grep dhcp
+
+# tcpdump
+-n		<!-- don't resolve -->
+-w		<!-- save to file -->
+-s		<!-- packet size, 0 for whole packet, only headers 128 -->
+-U		<!-- write at end of packet not line -->
+<!-- Examples  -->
+sudo tcpdump -i eth0 "not port 22" -n -U -s 0 -w trace.cap
+sudo tcpdump -i eth0 "udp dst port 67 or 68" -n -U -s 0 -w trace.cap
+sudo tcpdump -i eth0 "host 10.0.0.1" -n -U -s 0 -w trace.cap
+sudo tcpdump -i eth0 "host 10.0.0.1 and host 10.0.0.2" -n -U -s 0 -w trace.cap
+sudo tcpdump -i eth0 "icmp or arp" -n -U -s 0 -w trace.cap
