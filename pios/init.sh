@@ -11,6 +11,7 @@ pip3 install pipenv --break-system-packages
 pip3 install netifaces --break-system-packages
 pip3 install netaddr --break-system-packages
 pip3 install colorama --break-system-packages
+pip3 install rich --break-system-packages
 # Alias
 sh -c 'cat << EOL >> ~/.bashrc
 
@@ -22,7 +23,7 @@ alias system="neofetch && showip"
 alias ls="exa"
 alias ll="exa -alh"
 alias tree="exa --tree"
-alias showip="python3 ~/raspi/showip.py"
+alias showip="python3 ~/raspi/showip2.py"
 EOL'
 # Serial to Network
 sudo sh -c "mv /etc/ser2net.yaml /etc/ser2net.yaml.bak"

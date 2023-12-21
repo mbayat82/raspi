@@ -12,6 +12,7 @@ pip3 install pipenv
 pip3 install netifaces
 pip3 install netaddr
 pip3 install colorama
+pip3 install rich
 # Serial to Network
 sudo sh -c "mv /etc/ser2net.yaml /etc/ser2net.yaml.bak"
 sudo touch /etc/ser2net.yaml
@@ -41,7 +42,7 @@ alias system="neofetch && showip"
 alias ls="exa"
 alias ll="exa -alh"
 alias tree="exa --tree"
-alias showip="python3 ~/raspi/showip.py"
+alias showip="python3 ~/raspi/showip2.py"
 EOL'
 # WiFi Connecitivity
 read -sp 'PiFi SSID password: ' pifi_password

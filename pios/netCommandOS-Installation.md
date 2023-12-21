@@ -13,7 +13,7 @@ exec "$SHELL"
 pyenv install 3.11.0
 
 3. Install pipenv
- pip3 install pipenv --break-system-packages
+pip3 install pipenv --break-system-packages
 
 4. Clone Github & Activate pipenv
 cd && git clone https://github.com/mbayat82/netCommanDOS.git && cd netCommanDOS
