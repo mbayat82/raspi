@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo echo "caching sudo password"
 sudo apt update
-sudo apt upgrade
-sudo apt -y install net-tools nmap network-manager speedtest-cli dnsutils
+sudo apt -y upgrade
+sudo apt -y install net-tools nmap network-manager speedtest-cli dnsutils tcpdump
 sudo apt -y install telnet telnetd ser2net
 sudo apt -y install links2 neofetch btop gdu bat exa ripgrep fzf tmux
 sudo apt -y install python3 python3-pip
@@ -10,6 +10,7 @@ sudo apt -y install python3-netaddr
 sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git
 pip3 install pipenv
 pip3 install netifaces
+pip3 install netaddr
 pip3 install colorama
 # Serial to Network
 sudo sh -c "mv /etc/ser2net.yaml /etc/ser2net.yaml.bak"
