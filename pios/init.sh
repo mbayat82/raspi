@@ -7,11 +7,8 @@ sudo apt -y install telnet telnetd ser2net
 sudo apt -y install links2 neofetch btop gdu bat exa ripgrep tmux vim
 sudo apt -y install python3 python3-pip
 sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git
+sudo apt -y install python3-rich python3-colorama python3-netaddr python3-netifaces
 pip3 install pipenv --break-system-packages
-pip3 install netifaces --break-system-packages
-pip3 install netaddr --break-system-packages
-pip3 install colorama --break-system-packages
-pip3 install rich --break-system-packages
 # Alias
 sh -c 'cat << EOL >> ~/.bashrc
 
