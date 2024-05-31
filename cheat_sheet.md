@@ -8,6 +8,11 @@ ip route list
 sudo ip -6 route add default via 2001::1 dev eth0
 ip -6 route list
 
+# ser2net
+sudo dmesg | grep ttyUSB
+cat /etc/ser2net.yaml
+telnet localhost 2001
+
 # pi os
 sudo raspi-config > Interface Options > enable ssh and vnc
 lxappearance    <!-- theme -->
